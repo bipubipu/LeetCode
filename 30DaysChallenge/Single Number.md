@@ -1,7 +1,6 @@
-# Challenge Link
+## Challenge
 https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/528/week-1/3283/
 
-# Challenge Description
 Given a non-empty array of integers, every element appears twice except for one. Find that single one.
 
 Note:
@@ -17,8 +16,8 @@ Example 2:
 Input: [4,1,2,1,2]
 Output: 4
 
-# My solution
-'''
+## My solution
+''' Python
 class Solution:
     def singleNumber(self, nums):
         nums_n = sorted(nums)
