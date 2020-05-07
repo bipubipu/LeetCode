@@ -34,7 +34,9 @@ But it doesn't satisfy linear time complexity requirement.
 ## Other solutions
 ### Bit Manipulation
 a XOR 0 = a
+
 a XOR a = 0
+
 so (a XOR b) XOR b = a XOR (b XOR b) = a
 
 ``` Python
@@ -51,6 +53,7 @@ Space complexity: O(1).
 
 ### Math
 2∗(a+b+c)−(a+a+b+b+c)=c
+
 Set method can remove repetitive elements.
 
 ``` Python
@@ -60,7 +63,7 @@ class Solution(object):
 ``` 
 
 Time complexity: O(n).
-Space complexity: =O(n). set needs space for the elements in nums
+Space complexity: O(n). set needs space for the elements in nums
 
 ### Hash Table
 We use hash table to avoid the O(n)O(n) time required for searching the elements.
@@ -80,9 +83,9 @@ class Solution:
             if hash_table[i] == 1:
                 return i
 ``` 
-Time complexity : O(n). Time complexity of for loop is O(n). Time complexity of hash table(dictionary in python) operation pop is O(1).
+Time complexity: O(n). Time complexity of for loop is O(n). Time complexity of hash table(dictionary in python) operation pop is O(1).
 
-Space complexity : O(n). The space required by hash_table is equal to the number of elements in nums.
+Space complexity: O(n). The space required by hash_table is equal to the number of elements in nums.
 
 ### List operation
 1. Iterate over all the elements in \text{nums}nums
