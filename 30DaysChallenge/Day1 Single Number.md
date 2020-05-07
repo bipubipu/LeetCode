@@ -34,7 +34,7 @@ But it doesn't satisfy linear time complexity requirement.
 
 
 ## Other solutions
-### Bit Manipulation
+### Bit Manipulation -- It's very brilliant!
 a XOR 0 = a,
 
 a XOR a = 0,
@@ -54,7 +54,7 @@ Time complexity: O(n).
 Space complexity: O(1).
 
 
-### Math
+### Math -- I like this too!
 2∗(a+b+c)−(a+a+b+b+c)=c
 
 Set method can remove repetitive elements.
@@ -70,7 +70,7 @@ Space complexity: O(n). set needs space for the elements in nums
 
 
 ### Hash Table
-We use hash table to avoid the O(n)O(n) time required for searching the elements.
+We use hash table to avoid the O(n) time required for searching the elements.
 
 1. Iterate through all elements in nums and set up key/value pair.
 2. Return the element which appeared only once.
@@ -93,8 +93,8 @@ Space complexity: O(n). The space required by hash_table is equal to the number 
 
 
 ### List operation
-1. Iterate over all the elements in \text{nums}nums
-2. If some number in \text{nums}nums is new to array, append it
+1. Iterate over all the elements in nums
+2. If some number in nums is new to array, append it
 3. If some number is already in the array, remove it
 
 ``` Python
