@@ -11,6 +11,7 @@ Example 1:
 Input: [2,2,1]
 Output: 1
 
+
 ## Thinking process
 My initial thought is to compare the adjacent elements in sorted list. Things to consider include array index out of bound exception, and changing step in the loop.  
 ``` Python
@@ -31,11 +32,12 @@ The while loop has time complexity O(n), space complexity(1).
 Therefore, the overall time complexity is O(nlog(n)) and space complexity O(n).
 But it doesn't satisfy linear time complexity requirement.
 
+
 ## Other solutions
 ### Bit Manipulation
-a XOR 0 = a
+a XOR 0 = a,
 
-a XOR a = 0
+a XOR a = 0,
 
 so (a XOR b) XOR b = a XOR (b XOR b) = a
 
@@ -51,6 +53,7 @@ class Solution(object):
 Time complexity: O(n).
 Space complexity: O(1).
 
+
 ### Math
 2∗(a+b+c)−(a+a+b+b+c)=c
 
@@ -64,6 +67,7 @@ class Solution(object):
 
 Time complexity: O(n).
 Space complexity: O(n). set needs space for the elements in nums
+
 
 ### Hash Table
 We use hash table to avoid the O(n)O(n) time required for searching the elements.
@@ -86,6 +90,7 @@ class Solution:
 Time complexity: O(n). Time complexity of for loop is O(n). Time complexity of hash table(dictionary in python) operation pop is O(1).
 
 Space complexity: O(n). The space required by hash_table is equal to the number of elements in nums.
+
 
 ### List operation
 1. Iterate over all the elements in \text{nums}nums
