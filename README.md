@@ -5,7 +5,7 @@ I keep myself busy to forget about the financial crisis that I am having for the
 
 Time flies when I am immersed in programming. I can spend hours finding bugs and analysing others' solutions. I feel very content after solving one challenge after another. In this virtual world, I gained a sense of control. I'm like a general who only gives commands and the computer will follow my order and present exactly what I want. 
 
-Programming is like a beacon that lights up my way,a ladder for me to climb out of the pit, and a pair of wings which can take me wherever I want to go. 
+Programming is like a beacon that lights up my way, a ladder for me to climb out of the pit, and a pair of wings which can take me wherever I want to go. 
 
 There are so many brilliant questions and solutions that I can't help noting them down. This repo will function as a record of my journey in LeetCode.
 
