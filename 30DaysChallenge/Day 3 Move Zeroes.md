@@ -75,4 +75,4 @@ def moveZeros(nums):
 def moveZeros(nums):
      nums = sorted(nums, key=lambda x: x==0)
 ```
-I compared the same algorithm with two languages. Java's runtime is smaller than Python's.
+I compared the same algorithm with two languages. Java's runtime is less than Python's.
