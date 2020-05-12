@@ -36,4 +36,38 @@ Time complexity: O(n^2)
 Space complexity: O(1)
 
 ## Other solutions
-### Hash
+### Two-pass Hash Table
+Store the numbers into the dictionary and then use it.
+``` Python
+    class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        pairs = {}
+        for i in range(len(nums)):
+            pairs[nums[i]] = i                   
+        
+        for i in range(len(nums)):
+            complement = target - nums[i]    
+        
+            if (complement in pairs) & (pairs.get(complement) != i):            
+                return [i,pairs.get(complement)]
+        
+        return "No solution"
+```
+Time complexity: O(n)
+Space complexity: O(n)
+
+### One-pass Hash Table
+The idea is to insert the complement into the dictionary and also look back to check if current element's complement already exists in the dictionary. 
+
+``` Python
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        pairs = {}        
+        for i,v in enumerate(nums): 
+            if (target - v) in pairs:
+                return [pairs.get(target-v),i]
+            else:  
+                pairs[v] = i
+``` 
+Time complexity: O(n)
+Space complexity: O(n)
