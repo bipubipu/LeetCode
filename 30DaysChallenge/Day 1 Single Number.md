@@ -87,6 +87,8 @@ class Solution:
             if hash_table[i] == 1:
                 return i
 ``` 
+The difference between defaultdic and dict is that defaultdic will create a new entry if it doesn't exit. 
+
 Time complexity: O(n). Time complexity of for loop is O(n). Time complexity of hash table(dictionary in python) operation pop is O(1).
 
 Space complexity: O(n). The space required by hash_table is equal to the number of elements in nums.
