@@ -15,3 +15,16 @@ var isPalindrome = function(s) {
   return s1===s1.split("").reverse().join("");
 };
 ```
+```
+var isPalindrome = function(s) {
+    var s1 = s.toLowerCase().replace(/[\W_]/g,'');
+    let i=0, j=s1.length-1;
+    while(i<j){
+        if (s1[i]!=s1[j])
+            return false;
+        i++;
+        j--;
+    }    
+    return true;
+};
+```
