@@ -1,4 +1,4 @@
-## Prelude
+## Context
 My current state is like standing at the bottom of a pit. I am a career changer and haven't settled down for a job yet and COVID-19 came.
 
 I keep myself busy to forget about the financial crisis that I am having for the moment. One thing that returns to my routine is programming, about which I have certain amount of foundation.    
