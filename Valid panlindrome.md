@@ -15,6 +15,8 @@ var isPalindrome = function(s) {
   return s1===s1.split("").reverse().join("");
 };
 ```
+Another RegEX would be [^a-z0-9].
+
 ```
 var isPalindrome = function(s) {
     var s1 = s.toLowerCase().replace(/[\W_]/g,'');
