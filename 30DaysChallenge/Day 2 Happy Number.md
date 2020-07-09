@@ -40,7 +40,7 @@ class Solution:
                 results.append(result)
                 n = result
 ```   
-Time complexity: O(logn). The loop will take O(logn). Inside the loop, there is 'if in' which needs O(logn) time.
+Time complexity: O(logn). The loop will take O(logn). Inside the loop, there is 'if in' which needs O(logn) time.   
 Space complexity: O(logn)
 
 ## Other solutions
@@ -64,7 +64,7 @@ def isHappy(self, n):
 
     return n == 1
 ```
-Time complexity: O(logn)
+Time complexity: O(logn)   
 Space complexity: O(logn)
 
 ### Fast and slow pointer
@@ -89,7 +89,7 @@ def isHappy(self, n):
         fast_runner = get_next(get_next(fast_runner))
     return fast_runner == 1
 ```
-Time complexity: O(logn)
+Time complexity: O(logn)   
 Space complexity: O(1)
 
 ### Math
@@ -124,5 +124,5 @@ def isHappy(self, n: int) -> bool:
 
     return n == 1
 ```    
-Time complexity: O(logn)
+Time complexity: O(logn)   
 Space complexity: O(1) 
