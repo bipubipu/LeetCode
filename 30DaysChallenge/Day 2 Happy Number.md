@@ -9,13 +9,13 @@ Return True if n is a happy number, and False if not.
 
 Example: 
 
-Input: 19
-Output: true
-Explanation: 
-12 + 92 = 82
-82 + 22 = 68
-62 + 82 = 100
-12 + 02 + 02 = 1
+Input: 19   
+Output: true   
+Explanation:    
+12 + 92 = 82    
+82 + 22 = 68   
+62 + 82 = 100   
+12 + 02 + 02 = 1   
 
 ## Thinking process
 The first problem to tackle is splitting digits. There are many ways of doing it, like using mod(). But I personally chose transferring the number into a string and take each digit out. The second thing is to control when to break the loop. A number no matter Happy or not can lead to endless loop. My initial failured attemps didn't consider when to jump out with 'return False'. My judgement is based on if the sum is 1 or if it appears before.
